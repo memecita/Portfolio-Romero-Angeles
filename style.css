@@ -1,0 +1,832 @@
+:root {
+    --fondo-imagen: url('fondo1.jpg');
+    --texto: #000000;
+    --proyecto: #dddddd;
+    --violeta: rgb(123, 14, 174);
+    --violeta3: rgba(111, 2, 138, 0.855);
+    --tabla: rgba(111, 2, 138, 0.855);
+    --botoncolor: #710580;
+    --violetaa: rgb(158, 64, 201);
+    --violeta-claro: rgb(188, 119, 231);
+    --violeta-fuerte: rgba(98, 36, 113, 0.855);
+    --header: rgba(111, 2, 138, 0.855);
+    --blanco: #040404;
+    --texto2: rgb(4, 2, 4);
+    --tags: rgba(255, 255, 255, 0.855);
+    --card: rgba(111, 2, 138, 0.855);
+    --blancoo: #faf7f7;
+    --nombre: rgb(165, 5, 239);
+    --blancooo: #ffffff;
+    --contacto: rgba(111, 2, 138, 0.855);
+}
+
+body.oscuro {
+    --fondo-imagen: url('fondo2.jpg');
+    --header: #290d38;
+    --proyecto: #faf7f7;
+    --texto2: #ffffff;
+    --violeta: #c885e9;
+    --violeta3: #290d38;
+    --nombre: rgb(205, 140, 236);
+    --tags: rgb(119, 55, 148);
+    --card: #352342;
+    --contacto: #290d38;
+    --violetaa: rgb(123, 14, 174);
+    --texto: #e6d4ef;
+    --tabla: #352342;
+    --botoncolor: #451a5d;
+    --violeta-claro: #59376e;
+    --violeta-fuerte: #8146a5;
+    --blanco: #ffffff;
+    --blancooo: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: var(--fondo-imagen);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--texto);
+}
+
+.botoncolor {
+    font-size: 15px;
+    color: rgb(251, 251, 251);
+    background-color: var(--botoncolor);
+    padding: 5px;
+    border: 5px;
+}
+
+.Encabezado {
+    background-color: var(--header);
+    height: 115px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Menu-item {
+    display: flex;
+    align-items: center;
+}
+
+.Menu-contenedor {
+    width: 100%;
+    align-items: center;
+    height: 100%;
+}
+
+.Contenedor {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+}
+
+.Menu-links a {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+.banner {
+    height: 450px;
+    position: relative;
+    display: grid;
+    margin-bottom: 100px;
+}
+
+.contenido-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.Presentacion {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.Presentacion table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.Presentacion td {
+    text-align: center;
+}
+
+.tabla1 {
+    justify-self: center;
+}
+
+.Mi-nombre {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 75px;
+    color: var(--violetaa);
+}
+
+.Mi-nombre:hover {
+    color: var(--nombre);
+}
+
+.descripcion1, .descripcion2 {
+    color: var(--texto);
+}
+
+.Mi-foto {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.subtitulos {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;
+    text-align: center;
+    color: var(--violeta);
+    margin-top: 45px;
+    margin-bottom: 60px;
+}
+
+#Acercade {
+    margin-top: 80px !important;
+    margin-bottom: 130px !important;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+.Sobremi {
+    margin-top: 130px !important;
+    margin-bottom: 140px !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.tabla2 {
+    margin: 40px auto 0;
+    background-color: var(--tabla);
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.tabla2:hover {
+    background-color: var(--violetaa);
+}
+
+.tabla2 td {
+    text-align: center;
+    padding: 5px;
+    border: none;
+}
+
+.tabla2 p {
+    font-family: sans-serif;
+    font-size: 25px;
+    color: var(--blancoo);
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.violeta {
+    border: 2px solid var(--violeta-fuerte);
+    background-color: var(--violeta-fuerte);
+}
+
+.claro {
+    border: 2px solid var(--violeta-claro);
+    background-color: var(--violeta-claro);
+}
+
+.tags {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blancooo);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 5px;
+}
+
+.tags span {
+    background-color: rgb(165, 4, 201);
+    color: var(--blancooo);
+    border-radius: 5px;
+    padding: 5px 8px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Proyectos {
+    margin-top: 100px !important;
+    margin-bottom: 100px !important;
+    padding: 50px 20px;
+}
+
+.carrusel-contenedor {
+    position: relative;
+    width: 95%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.carrusel-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.carrusel-track {
+    display: flex;
+    gap: 1.2rem;
+    padding: 10px 5px 20px;
+    transition: transform 0.4s ease;
+}
+
+.proyecto-card {
+    flex: 0 0 calc(25% - 0.9rem);
+    min-width: 0;
+    box-sizing: border-box;
+    background-color: var(--card);
+    border: 1px solid var(--violeta);
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: var(--blancooo);
+}
+
+.proyecto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.proyecto-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.proyecto-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+    text-align: center;
+}
+
+.proyecto-card h3 {
+    font-family: sans-serif;
+    font-size: 19px;
+    margin: 0;
+}
+
+.proyecto-card p {
+    font-family: sans-serif;
+    font-size: 15px;
+    margin: 0;
+}
+
+.proyecto-card a {
+    display: inline-block;
+    margin-top: auto;
+    background-color: rgb(165, 4, 201);
+    color: var(--blancooo);
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 9px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.proyecto-card a:hover {
+    background-color: var(--violetaa);
+}
+
+.flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--violeta);
+    color: white;
+    border: none;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flecha:hover {
+    background-color: var(--violetaa);
+}
+
+.flecha:disabled {
+    background-color: #999;
+    opacity: 0.5;
+    cursor: default;
+}
+
+#btn-anterior {
+    left: -20px;
+}
+
+#btn-siguiente {
+    right: -20px;
+}
+
+.indicadores {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.punto-proyecto {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--violeta-claro);
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.punto-proyecto.activo {
+    background-color: var(--violeta-fuerte);
+    transform: scale(1.3);
+}
+
+#Contacto {
+    margin-top: 150px !important;
+    margin-bottom: 100px !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.Contacto {
+    width: 450px;
+    margin: 50px 80px 0 auto;
+}
+
+.Contacto fieldset {
+    background-color: var(--contacto);
+    justify-content: right;
+    border-radius: 10px;
+    padding: 30px;
+    width: 110%;
+}
+
+.Contacto label {
+    font-family: sans-serif;
+    color: var(--blancooo);
+}
+
+.Contacto p {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: var(--blancooo);
+}
+
+.Contacto input {
+    width: 100%;
+    border-radius: 10px;
+    height: 30px;
+    font-size: 17px;
+}
+
+.Contacto textarea {
+    width: 100%;
+    font-size: 17px;
+    padding: 15px;
+    border-radius: 10px;
+    height: 100px;
+}
+
+ul {
+    display: flex;
+}
+
+footer {
+    background-color: var(--header);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.lista-footer {
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    height: 115px;
+}
+
+.Menu-links2 a {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.lista-footer li {
+    list-style-type: none;
+}
+
+@media (min-width: 769px) {
+    .descripcion1, .descripcion2 {
+        font-size: 13px;
+    }
+
+    .Contacto {
+        width: 450px;
+        margin: 50px 80px 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .descripcion1, .descripcion2 {
+        font-size: 13px;
+    }
+    .carrusel-contenedor {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        margin: 30px auto;
+        padding: 0 35px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    .carrusel-wrapper {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        border-radius: 12px;
+        box-sizing: border-box;
+    }
+
+    .carrusel-track {
+        display: flex;
+        width: 100%;
+        gap: 0;
+        padding: 5px 0 15px;
+        transition: transform 0.4s ease;
+        box-sizing: border-box;
+    }
+
+    .proyecto-card {
+        flex: 0 0 100%;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        border-radius: 12px;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+    .proyecto-card img {
+        display: block;
+        width: 100%;
+        height: 150px;
+        aspect-ratio: auto;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .proyecto-info {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .proyecto-card h3 {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .proyecto-card p {
+        font-size: 14px;
+        line-height: 1.4;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    .proyecto-card a {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 14px;
+        gap: 6px;
+    }
+
+    .tags span {
+        font-size: 12px;
+        padding: 5px 7px;
+    }
+
+    .flecha {
+        position: absolute;
+        z-index: 5;
+        width: 32px;
+        height: 32px;
+        font-size: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #btn-anterior {
+        left: 0;
+    }
+
+    #btn-siguiente {
+        right: 0;
+    }
+
+    .indicadores {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 7px;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .punto-proyecto {
+        width: 9px;
+        height: 9px;
+    }
+
+
+    .Mi-nombre{
+        font-size: 10px;
+    }
+    .Encabezado {
+        height: auto;
+        min-height: 90px;
+        padding: 12px 3px;
+    }
+
+    .Contenedor {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .Menu-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+    }
+
+    .Menu-links a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .botoncolor {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .banner {
+        height: auto;
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .Presentacion {
+        width: 100%;
+    }
+
+    .Presentacion table {
+        width: 100%;
+        margin-bottom: 5% !important;
+    }
+
+    .Presentacion td {
+        padding: 8px;
+    }
+
+    .Mi-nombre {
+        font-size: 34px;
+    }
+
+    .Mi-foto {
+        width: 170px;
+    }
+
+    .descripcion1, .descripcion2,
+    #Acercade .descripcion1, #Acercade .descripcion2 {
+        font-size: 13px !important;
+        overflow-wrap: anywhere;
+    }
+
+    #Acercade {
+        margin-top: 45px !important;
+        margin-bottom: 60px !important;
+        padding: 30px 6% !important;
+    }
+
+    #Acercade h1 {
+        font-size: 18px !important;
+    }
+
+    #Acercade p {
+        line-height: 1.5 !important;
+    }
+
+    .Sobremi {
+        margin-top: 60px !important;
+        margin-bottom: 70px !important;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .subtitulos {
+        font-size: 29px;
+        margin-top: 25px;
+        margin-bottom: 35px;
+    }
+
+    .tabla2 {
+        display: block;
+        width: 95%;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+
+    .tabla2 tbody {
+        display: block;
+    }
+
+    .tabla2 tr {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    .tabla2 td {
+        display: block;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .tabla2 td:last-child {
+        grid-column: 1 / 3;
+    }
+
+    .tabla2 p {
+        font-size: 13px;
+        padding: 7px 3px;
+        margin: 5px 0;
+        overflow-wrap: break-word;
+    }
+
+    .tabla2 h1 {
+        font-size: 19px !important;
+    }
+
+    .tabla2 td:last-child p {
+        font-size: 14px !important;
+    }
+
+    #Contacto {
+        margin-top: 75px !important;
+        margin-bottom: 50px !important;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    #Contacto table,
+    #Contacto tbody,
+    #Contacto tr,
+    #Contacto td {
+        display: block;
+        width: 100% !important;
+    }
+
+    #Contacto table {
+        border-collapse: collapse;
+    }
+
+    .Contacto {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .Contacto fieldset {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .Contacto p {
+        font-size: 17px;
+    }
+
+    .Contacto input,
+    .Contacto textarea {
+        font-size: 15px;
+    }
+
+    #Contacto h2 {
+        font-size: 25px !important;
+    }
+
+    #Contacto td:last-child {
+        padding: 20px 5px;
+        text-align: center;
+    }
+
+    #Contacto td:last-child h1 {
+        font-size: 22px;
+    }
+
+    #Contacto td:last-child p,
+    #Contacto td:last-child a {
+        font-size: 16px !important;
+        overflow-wrap: anywhere;
+    }
+
+    .lista-footer {
+        width: 100%;
+        height: auto;
+        padding: 20px 5px;
+    }
+
+    .Menu-links2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .Menu-links2 a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .lista-footer p {
+        font-size: 13px;
+    }
+}
