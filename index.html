@@ -124,7 +124,7 @@
         <table style="width: 100%;">
             <tr>
                 <td style="width: 50%; vertical-align: top;">
-                   <form class="Contacto" action="https://formspree.io/f/mbgojozp" method="POST" onsubmit="return validar(this)>
+                    <form class="Contacto" action="https://formspree.io/f/mbgojozp" method="POST">
                         <fieldset>
                             <label>
                                 <br>
@@ -147,29 +147,11 @@
                             <label>
                                 <br>
                                 <p>¡Detallame tu consulta!</p>
-                                <textarea name="mensaje" style="margin-top: 5px;"></textarea>
+                                <textarea name="message" style="margin-top: 5px;"></textarea>
                             </label>
                             <button type="submit" style="font-family: sans-serif; border-radius: 15px; color: var(--blancooo); background-color: var(--violeta); font-size: 17px; padding: 5px; margin-top: 10px;">Enviar Mensaje</button>
                         </fieldset>
                     </form>
-
-<script>
-    let form = document.querySelector(".Contacto");
-    form.onsubmit = function(e) {
-        let nombre = form.nombre.value;
-        let email = form.email.value;
-        let numero = form.numerito.value;
-        let mensaje = form.mensaje.value;
-
-        if (nombre == "" && email == "" && numero == "" && mensaje == "") {
-            e.preventDefault();
-            alert("Completá los campos antes de enviar");
-        } else {
-            console.log(nombre + ", Se envió el mensaje" + typeof(nombre));
-            alert("Se envio tu mensaje, " + nombre);
-        }
-    }
-</script>
                     </form>
                 </td>
                 <td style="width: 50%; vertical-align: top; padding: 20px; font-family: sans-serif; color: var(--violeta);">
