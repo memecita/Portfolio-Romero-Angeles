@@ -57,10 +57,8 @@
     </section>
     
     <section class="Sobremi" id="Sobremi">
-
         <h2 style="font-family: sans-serif; font-size: 30px; text-align: center;">¿Quién soy?</h2>
-        <h2 class="subtitulos">Un poco Sobre mí</h2>
-
+        <h2 class="subtitulos">Un poco Sobre mí</h2
         <li style="justify-self: center; list-style-type: none; background-color: var(--violeta); border-radius: 10px;">
             <a href="#Inicio" style="display: flexbox; color: var(--blancooo); font-family: sans-serif; font-size: 20px; justify-self: center; text-decoration: none; padding: 8px;">Volver al Inicio</a>
         </li>
@@ -74,7 +72,6 @@
                     <p class="claro">Intereses y algunos Hobbies</p>
                     <p class="violeta">Conocimiento de Idiomas</p>
                 </td>
-
                 <td>
                     <p class="claro">17 años</p>
                     <p class="violeta">Programación y Diseño web</p>
@@ -96,41 +93,28 @@
         </table>
     </section>
 
-    
 <section id="Proyectos">
-
     <h2 style="font-family: sans-serif; font-size: 30px; text-align: center;">
         ¿Cuáles son mis Proyectos?
     </h2>
-
     <h1 class="subtitulos">Mis Proyectos</h1>
-
     <li style="justify-self: center; list-style-type: none; background-color: var(--violeta); border-radius: 10px;">
         <a href="#Inicio" style="color: var(--blancooo); font-family: sans-serif; font-size: 20px; text-decoration: none; padding: 8px; display: block;">Volver al Inicio</a>
     </li>
     <br>
     <p class="descripcion2" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 25px; text-align: center;">Proyectos que realicé durante 2025 y 2026.</p>
-
     <div class="carrusel-contenedor">
-
         <button class="flecha" id="btn-anterior" onclick="moverCarrusel(-1)">❮</button>
-
         <div class="carrusel-wrapper">
             <div class="carrusel-track" id="carrusel-track">
             </div>
         </div>
-
         <button class="flecha" id="btn-siguiente" onclick="moverCarrusel(1)">❯</button>
-
     </div>
-
     <div class="indicadores" id="indicadores-proyectos"></div>
-
 </section>
 
-
     <section id="Contacto">
-
         <h2 style="font-family: sans-serif; font-size: 30px; text-align: center;">Contáctame</h2>
         <h2 class="subtitulos">Contacto</h2>
         <li style="justify-self: center; list-style-type: none; background-color: var(--violeta); border-radius: 10px;">
@@ -140,64 +124,65 @@
         <table style="width: 100%;">
             <tr>
                 <td style="width: 50%; vertical-align: top;">
-
-                    <form class="Contacto" action="https://formspree.io/f/mbgojozp" method="POST">
+                   <form class="Contacto" action="https://formspree.io" method="POST">
                         <fieldset>
-
                             <label>
                                 <br>
                                 <p>Tu nombre.</p>
                                 <input style="margin-top: 10px;" type="text" name="nombre">
                             </label>
-
                             <br>
-
                             <label>
                                 <br>
                                 <p>Tu Correo.</p>
                                 <input style="margin-top: 10px;" type="email" name="email">
                             </label>
-
                             <br>
-
                             <label>
                                 <br>
                                 <p>Tu Whatsapp.</p>
                                 <input style="margin-top: 10px;" type="number" name="number">
                             </label>
-
                             <br>
-
                             <label>
                                 <br>
                                 <p>¡Detallame tu consulta!</p>
                                 <textarea name="message" style="margin-top: 5px;"></textarea>
                             </label>
-
                             <button type="submit" style="font-family: sans-serif; border-radius: 15px; color: var(--blancooo); background-color: var(--violeta); font-size: 17px; padding: 5px; margin-top: 10px;">Enviar Mensaje</button>
-
                         </fieldset>
                     </form>
 
+<script>
+    let form = document.querySelector(".Contacto");
+    form.onsubmit = function(e) {
+        let nombre = form.nombre.value;
+        let email = form.email.value;
+        let numero = form.numerito.value;
+        let mensaje = form.mensaje.value;
+
+        if (nombre == "" && email == "" && numero == "" && mensaje == "") {
+            e.preventDefault();
+            alert("Completá los campos antes de enviar");
+        } else {
+            console.log(nombre + ", Se envió el mensaje" + typeof(nombre));
+            alert("Se envio tu mensaje, " + nombre);
+        }
+    }
+</script>
+                    </form>
                 </td>
-
                 <td style="width: 50%; vertical-align: top; padding: 20px; font-family: sans-serif; color: var(--violeta);">
-
                     <h1>Datos de contacto</h1>
                     <br>
                     <p style="font-size: 20px;">WhatsApp:</p>
                     <p style="font-size: 20px; color: var(--texto2)">+54 9 1127030492</p>
-
                     <br>
-
                     <p style="font-size: 20px; margin-top: 10px;">Correo:</p>
                     <p style="font-size: 20px; color: var(--texto2)">angelesromero7g2@gmail.com</p>
-
                     <br>
-
                     <p style="font-size: 20px; margin-top: 10px;">GitHub:</p>
                     <a href="https://github.com/memecita" style="text-decoration: none; font-size: 20px; color: var(--texto2)">Entrar al perfil</a>
-
                 </td>
             </tr>
         </table>
@@ -210,7 +195,6 @@
                 <li><a href="#Acercade" class="nav__link">Acerca de</a></li>
                 <li><a href="#Contacto" class="nav__link">Contacto</a></li>
             </ul>
-
             <p class="nav__link">@ Todos los derechos reservados.</p>
         </nav>
     </footer>
