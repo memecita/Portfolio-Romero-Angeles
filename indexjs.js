@@ -37,7 +37,7 @@ const proyectos = [
     },
     {
         nombre: "Home Básica",
-        descripcion: "Primer Proyecto de Figma",
+        descripcion: "Primer Proyecto de Figma.",
         imagen: "proyecto7.png",
         tecnologias: ["FIGMA"],
         enlace: "https://www.figma.com/design/ZFCngBwVRWJCbiSKNQC3gv/Storeme?node-id=0-1&p=f&t=vzpIdodKZKv1GvSE-0"
