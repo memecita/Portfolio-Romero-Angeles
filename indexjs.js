@@ -36,12 +36,19 @@ const proyectos = [
         enlace: "https://memecita.github.io/Carrusel-Pastel/"
     },
     {
+        nombre: "Home Básica",
+        descripcion: "Primer Proyecto de Figma",
+        imagen: "proyecto7.png",
+        tecnologias: ["FIGMA"],
+        enlace: "https://www.figma.com/design/ZFCngBwVRWJCbiSKNQC3gv/Storeme?node-id=0-1&p=f&t=vzpIdodKZKv1GvSE-0"
+    },
+    {
         nombre: "Página con Figma",
         descripcion: "Biblioteca virtual con varias secciones.",
         imagen: "Proyecto 6.png",
         tecnologias: ["FIGMA"],
         enlace: "https://www.figma.com/design/9rvaevp0sTdJCTIq0Fka0f/Sin-t%C3%ADtulo?node-id=14-144&t=hcdxjgM12nItZGRp-0"
-    }
+    }  
 ];
 
 let cuantasVeVisible = 4;
