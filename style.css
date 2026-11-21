@@ -21,7 +21,7 @@
 }
 
 body.oscuro {
-    --fondo-imagen: url('fondo2.jpg');
+    --fondo-imagen: url('fondo2.png');
     --header: #290d38;
     --proyecto: #faf7f7;
     --texto2: #ffffff;
