@@ -279,6 +279,10 @@ body {
     transition: transform 0.4s ease;
 }
 
+.Proyecto, h2{
+    color: var(--titulo);
+}
+
 .proyecto-card {
     flex: 0 0 calc(25% - 0.9rem);
     min-width: 0;
@@ -411,6 +415,10 @@ body {
 .Contacto {
     width: 450px;
     margin: 50px 80px 0 auto;
+}
+
+.Contacto, h2{
+    color: var(--titulo);
 }
 
 .Contacto fieldset {
