@@ -205,12 +205,12 @@ body {
     border-radius: 8px;
 }
 
-.violeta {
+.violeta:hover {
     border: 2px solid var(--violeta-fuerte);
     background-color: var(--violeta-fuerte);
 }
 
-.claro {
+.claro:hover {
     border: 2px solid var(--violeta-claro);
     background-color: var(--violeta-claro);
 }
