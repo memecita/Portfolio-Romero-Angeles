@@ -135,7 +135,7 @@ body {
     justify-self: center;
 }
 
-.tabla1 h1:hover{
+.tabla1, h1:hover{
     color: var(--titulo);
 }
 
@@ -202,7 +202,7 @@ body {
     border: none;
 }
 
-.tabla2 h1:hover{
+.tabla2, h1:hover{
     color: var(--titulo);
 }
 
@@ -220,19 +220,17 @@ body {
     background-color: var(--violeta-fuerte);
 }
 
-.violeta:hover {
-    border: 2px solid var(--violeta-fuerte);
-    background-color: var(--violeta-fuerte);
-}
-
 .claro {
     border: 2px solid var(--violeta-claro);
     background-color: var(--violeta-claro);
 }
 
-.claro:hover {
-    border: 2px solid var(--violeta-claro);
-    background-color: var(--violeta-claro);
+.violeta:hover{
+    color(--violeta--claro);
+}
+
+.claro:hover{
+    color(--violeta-fuerte);
 }
 
 .tags {
