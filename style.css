@@ -215,9 +215,19 @@ body {
     border-radius: 8px;
 }
 
+.violeta {
+    border: 2px solid var(--violeta-fuerte);
+    background-color: var(--violeta-fuerte);
+}
+
 .violeta:hover {
     border: 2px solid var(--violeta-fuerte);
     background-color: var(--violeta-fuerte);
+}
+
+.claro {
+    border: 2px solid var(--violeta-claro);
+    background-color: var(--violeta-claro);
 }
 
 .claro:hover {
