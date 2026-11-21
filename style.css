@@ -202,7 +202,7 @@ body {
     border: none;
 }
 
-.tabla2, h1:hover{
+.tabla2, h2:hover{
     color: var(--titulo);
 }
 
@@ -226,11 +226,11 @@ body {
 }
 
 .violeta:hover{
-    color(--violeta--claro);
+    color(--violeta-fuerte);
 }
 
 .claro:hover{
-    color(--violeta-fuerte);
+    color(--violeta-claro);
 }
 
 .tags {
